@@ -2,9 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function MainNav() {
-  const activeNavStyle = {
-    backgroundColor: "#61dafb",
-  };
+  const activeNavStyle = {};
   return (
     <section className="App_nav">
       <ul>
