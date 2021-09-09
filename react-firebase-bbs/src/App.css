@@ -55,7 +55,6 @@ section.App_nav {
 }
 section.App_nav ul {
   display: flex;
-  background-color: #282c34;
   color: white;
   list-style: none;
 }
