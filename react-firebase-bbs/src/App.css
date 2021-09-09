@@ -84,3 +84,28 @@ table td {
   padding: 8px;
   cursor: pointer;
 }
+
+input {
+  width: 80%;
+  padding: 1rem;
+  border: none;
+  display: flex;
+  margin-left: 10%;
+  background-color: rgb(240, 240, 240);
+  border-bottom: 1px solid white;
+  border-radius: 10px;
+}
+
+div.button {
+  width: 70%;
+  display: flex;
+  margin-left: 10%;
+}
+
+button.btn_save {
+  border: none;
+  padding: 8px 20px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
