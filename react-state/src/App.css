@@ -12,10 +12,10 @@
   height: 30vmin;
   pointer-events: none;
 }
-/**
-* window OS의 접근성 / window 애니매이션 재생 부분이 
-off 되어 있으면 logo 회전 애니매이션을 중지하도록 설정하기
-no-preference(애니매이션 재생 off 아니면
+/*
+	window OS 의 접근성  / window 애니메이션 재생 부분이
+	off 되어 있으면 logo의 회전 애니메이션을 중지하도록 설정하기
+	no-preference(애니메이션 재생 off 아니면)
 */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -48,7 +48,12 @@ no-preference(애니매이션 재생 off 아니면
 }
 
 section.main_section {
-  display: none;
+  display: flex;
+  width: 100vw;
 }
+
 section.main_section article {
+  flex: 1;
+  border: 1px solid blue;
+  margin: 10px;
 }
