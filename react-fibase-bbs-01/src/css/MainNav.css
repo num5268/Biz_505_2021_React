@@ -1,7 +1,12 @@
 ul.main_nav {
   display: flex;
-  background-color: cyan;
+  background-color: blue;
   color: white;
+  list-style: none;
+}
+
+ul.main_nav li:nth-of-type(3) {
+  margin-left: auto;
 }
 
 ul.main_nav a {
@@ -9,7 +14,6 @@ ul.main_nav a {
   padding: 0.8rem;
   text-decoration: none;
   color: inherit;
-  list-style: none;
 
   border-top: 3px solid transparent;
   border-bottom: 3px solid transparent;

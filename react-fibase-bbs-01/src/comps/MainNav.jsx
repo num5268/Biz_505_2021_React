@@ -1,16 +1,17 @@
 import React from "react";
 import "../css/MainNav.css";
 import { NavLink } from "react-router-dom";
+
 function MainNav() {
   return (
     <ul className="main_nav">
       <li>
         <NavLink exact to="/" activeClassName="active_nav">
-          HOME
+          Home
         </NavLink>
       </li>
       <li>
-        <NavLink exact to="/writer" activeClassName="active_nav">
+        <NavLink exact to="/write" activeClassName="active_nav">
           글쓰기
         </NavLink>
       </li>

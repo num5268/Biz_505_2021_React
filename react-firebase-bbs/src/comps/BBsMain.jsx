@@ -1,27 +1,47 @@
-import React from "react";
-import moment from "moment";
-
-const bbsSampleData = {
-  b_date: moment().format("YYYY[-]MM[-]DD"),
-  b_time: moment().format("HH:mm:ss"),
-  b_id: "홍길동",
-  b_subject: "BBS",
-  comp: false,
-};
+import React, { useEffect, useState } from "react";
+import "../css/BBs.css";
+import { firestore } from "../config/BBSConfig";
 
 function BBsMain() {
+  const [bbsData, setBBsData] = useState([]);
+  const firebaseFetch = () => {
+    firestore
+      .collection("bbs")
+      .get()
+      .then((bbsList) => {
+        console.log(bbsList.size);
+        bbsList.forEach((bbs) => {
+          console.log(bbs);
+          setBBsData([...bbsData, { ...bbs.data(), id: bbs.id }]);
+        });
+      });
+    console.log(bbsList);
+  };
+  useEffect(firebaseFetch, []);
+
   return (
-    <div>
-      <table>
+    <table className="bbs_list">
+      <thead>
         <tr>
-          <td>작성일자</td>
-          <td>작성시각</td>
-          <td>작성자</td>
-          <td>제목</td>
+          <th>작성일자</th>
+          <th>작성시각</th>
+          <th>작성자</th>
+          <th>제목</th>
         </tr>
-        <tr></tr>
-      </table>
-    </div>
+      </thead>
+      <tbody>
+        {bbsData.map((bbs) => {
+          return (
+            <tr key={bbs.id}>
+              <td>{bbs.b_date}</td>
+              <td>{bbs.b_time}</td>
+              <td>{bbs.b_write}</td>
+              <td>{bbs.b_subject}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
   );
 }
 

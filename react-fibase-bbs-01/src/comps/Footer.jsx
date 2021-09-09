@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <footer>
-      <address>CopyRight &copy; num5268@gmail.com</address>
+      <address>CopyRight &copy; callor@callor.com</address>
     </footer>
   );
 }

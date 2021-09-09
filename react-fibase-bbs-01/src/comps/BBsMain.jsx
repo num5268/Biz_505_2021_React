@@ -1,4 +1,5 @@
 import React from "react";
+import "../css/BBs.css";
 
 function BBsMain() {
   return (
