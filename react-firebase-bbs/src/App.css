@@ -85,27 +85,31 @@ table td {
   cursor: pointer;
 }
 
-input {
+div.bbs_write input {
   width: 80%;
-  padding: 1rem;
+  padding: 8px;
+  margin: 5px auto;
   border: none;
-  display: flex;
-  margin-left: 10%;
   background-color: rgb(240, 240, 240);
-  border-bottom: 1px solid white;
+  outline: none;
   border-radius: 10px;
 }
-
-div.button {
-  width: 70%;
-  display: flex;
-  margin-left: 10%;
+div.bbs_write input:hover {
+  background-color: #ddd;
 }
-
+div.bbs_write input:focus {
+  background-color: #eee;
+}
 button.btn_save {
+  background-color: rgb(129, 129, 129);
+  width: 80%;
+  color: white;
+  margin: 5px auto;
+  padding: 1rem;
+  outline: none;
   border: none;
-  padding: 8px 20px;
-  margin-top: 5px;
-  cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+button.btn_save:hover {
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }

@@ -19,12 +19,7 @@ function BBsMain() {
           <td>작성자</td>
           <td>제목</td>
         </tr>
-        <tr>
-          <td>2021-09-09</td>
-          <td>09:32:28</td>
-          <td>홍길동</td>
-          <td>BBS</td>
-        </tr>
+        <tr></tr>
       </table>
     </div>
   );

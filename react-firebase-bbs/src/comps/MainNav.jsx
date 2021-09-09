@@ -2,27 +2,26 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 function MainNav() {
-  const activeNavStyle = {};
   return (
     <section className="App_nav">
       <ul>
         <li>
-          <NavLink to="/" activeStyle={activeNavStyle} exact>
+          <NavLink exact to="/" activeClassName="avtive_nav">
             HOME
           </NavLink>
         </li>
         <li>
-          <NavLink to="/write" activeStyle={activeNavStyle}>
+          <NavLink exact to="/write" activeClassName="avtive_nav">
             글쓰기
           </NavLink>
         </li>
         <li>
-          <NavLink to="/login" activeStyle={activeNavStyle}>
+          <NavLink exact to="/login" activeClassName="avtive_nav">
             로그인
           </NavLink>
         </li>
         <li>
-          <NavLink to="/join" activeStyle={activeNavStyle}>
+          <NavLink exact to="/join" activeClassName="avtive_nav">
             회원가입
           </NavLink>
         </li>
