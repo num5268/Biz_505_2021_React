@@ -1,7 +1,8 @@
-import Header from "./Header";
 import BBsMain from "./BBsMain";
-import MainNav from "./MainNav";
-import Footer from "./Footer";
 import BBsWrite from "./BBsWrite";
+import BBsDetail from "./BBsDetail";
+import MainNav from "./MainNav";
+import Header from "./Header";
+import Footer from "./Footer";
 
-export { Header, BBsMain, MainNav, Footer, BBsWrite };
+export { BBsMain, BBsWrite, BBsDetail, MainNav, Header, Footer };

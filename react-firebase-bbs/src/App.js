@@ -1,7 +1,7 @@
 import "./App.css";
 
-import { BrowserRouter, Route } from "react-router-dom";
-import { Footer, MainNav, BBsMain, Header, BBsWrite } from "./comps";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Footer, MainNav, BBsMain, Header, BBsWrite, BBsDetail } from "./comps";
 
 function App() {
   return (
@@ -10,8 +10,11 @@ function App() {
         <Header />
         <MainNav />
         <section className="main_section">
-          <Route exact path="/" component={BBsMain} />
-          <Route exact path="/write" component={BBsWrite} />
+          <Switch>
+            <Route exact path="/" component={BBsMain} />
+            <Route exact path="/write" component={BBsWrite} />
+            <Route exact path="/detail/:id" component={BBsDetail} />
+          </Switch>
         </section>
         <Footer />
       </div>

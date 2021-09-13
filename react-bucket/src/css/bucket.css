@@ -1,0 +1,19 @@
+table.buc_list {
+  width: 95%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+table.buc_list tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+table.buc_list tr:nth-of-type(odd) {
+  font-weight: bold;
+}
+
+table.buc_list th,
+table.buc_list td {
+  padding: 8px;
+}
